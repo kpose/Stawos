@@ -1,19 +1,26 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, FlatList, TouchableHighlight } from 'react-native';
+import { createStackNavigator } from 'react-navigation'
+import People from './components/People'
+import Container from './Container'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
-  );
-}
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+const links = [
+  { title: 'People' },
+  { title: 'Films' },
+  { title: 'StarShips' },
+  { title: 'Vehicles' },
+  { title: 'Species' },
+  { title: 'Planets' }
+]
+
+
+const App = createStackNavigator({    
+  StarWars: {
+    screen: StarWars    
   },
-});
+  People: {
+    screen: People    
+  }
+})
+export default App
