@@ -30,9 +30,9 @@ export default class Films extends Component {
         return (
           <View style={styles.itemContainer}>
             <Text style={styles.name}>{item.title}</Text>
-            <Text style={styles.info}>Description: {item.opening_crawl}</Text>
-            <Text style={styles.info}>Producers: {item.producer}</Text>
-            <Text style={styles.info}>Release Date: {item.release_date}</Text>
+            <Text style={styles.info2}>DESCRIPTION: <Text style={styles.info}> {item.opening_crawl} </Text> </Text>
+            <Text style={styles.info2}>PRODUCERS: <Text style={styles.info}> {item.producer} </Text> </Text>
+            <Text style={styles.info2}>RELEASE DATE: <Text style={styles.info}> {item.release_date} </Text></Text>
             
           </View>
         )
@@ -57,37 +57,23 @@ export default class Films extends Component {
 }
 
 const styles = StyleSheet.create({
-    pickerToggleContainer: {
-      padding: 25,
-      justifyContent: 'center',
-      alignItems: 'center'
-    },
-    pickerToggle: {
-      color: '#EE3D2B',
-      fontSize:16,
-      fontWeight: 'bold'
-    },
-    pickerContainer: {
-      position: 'absolute',
-      bottom: 0,
-      right: 0,
-      left: 0
-    },
     itemContainer: {
       padding: 15,
       borderBottomWidth: 1, borderBottomColor: '#ffe81f'
     },
     name: {
-      color: '#ffe81f',
-      fontSize: 18
+      color: '#EE3D2B',
+      fontSize: 20,
+      fontWeight: 'bold'
     },
     info: {
-      color: '#ffe81f',
+      color: '#ffffff',
       fontSize: 14,
+      textAlign: 'center',
       marginTop: 5
     },
-    hwinfo: {
-      color: '#EE3D2B',
+    info2: {
+      color: '#ffe81f',
       fontSize: 13,
       marginTop: 5,
       fontWeight: 'bold'
