@@ -22,9 +22,9 @@ class StarWars extends Component {
   static navigationOptions = {
     headerTitle: <Text
       style={{
-        fontSize: 34, color: 'rgb(255,232,31)'
+        fontSize: 34, color: '#EE3D2B', fontWeight: 'bold'
       }}
-    >Star Wars Library</Text>,
+    >StarWars Library</Text>,
     headerStyle: { backgroundColor: "black", height: 110 }
   }
   navigate = (link) => {
@@ -71,7 +71,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1
   },
   text: {
-    color: '#2370D0',
+    color: '#ffe81f',
     fontSize: 18
   }
 });
