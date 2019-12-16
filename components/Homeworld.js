@@ -7,6 +7,16 @@ import {
 } from 'react-native'
 
 class HomeWorld extends React.Component {
+  static navigationOptions = {
+    headerTitle: 'HomeWorld',
+    headerStyle: {
+      borderBottomWidth: 1,
+      borderBottomColor: '#ffe81f',
+      backgroundColor: 'black'
+    },
+    pressColorAndroid: 'white',
+    headerTintColor: '#ffe81f'
+  }
   state = {
     data: {},
     loading: true
