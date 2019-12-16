@@ -8,6 +8,7 @@ import {
 import { createStackNavigator } from 'react-navigation';
 import Container from './Container'
 import People from './components/People'
+import Films from './components/Films'
 
 const links = [
   { title: 'People' },
@@ -55,11 +56,14 @@ class StarWars extends Component {
 
 const App = createStackNavigator({
   Home: {
-    screen: StarWars,
+    screen: StarWars
   },
   People: {
     screen: People
-  }
+  },
+  Films: {
+    screen: Films
+  },
 });
 
 
